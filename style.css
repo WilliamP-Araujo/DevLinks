@@ -82,6 +82,8 @@ body * {
 }
 
 .light #switch button {
+  left: auto; /* Reseta a propriedade left */
+  right: 0; /* Move o botão para a direita */
   animation: slide-in 0.2s forwards;
 }
 
