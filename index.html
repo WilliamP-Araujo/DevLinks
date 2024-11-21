@@ -1,44 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
-<head>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8" />
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevLinks</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="container">
-        <div id="profile">
-            <img src="./assets/Foto-perfil-png.png" alt="Fotografia de william sorrindo com fundo florestado" />
-            <p id="username">@Uwill.png</p>
-            <select id="languageSelector" onchange="changeLanguage()">
-                <option value="en">English</option>
-                <option value="pt">Português</option>
-            </select>
-            <div id="switch" onclick="toggleMode()">
-                <button></button>
-                <span></span>
+      <div id="profile">
+        <img
+          src="./assets/Foto-perfil-png.png"
+          alt="Fotografia de william sorrindo com fundo florestado"
+        />
+        <p id="username">@Uwill.png</p>
+        <select id="languageSelector" onchange="changeLanguage()">
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+        </select>
+        <div>
+          <div class="ui left floated compact segment">
+            <div class="ui fitted toggle checkbox">
+              <label class="inline-flex items-center cursor-pointer">
+                <input
+                  type="checkbox"
+                  value=""
+                  class="sr-only peer"
+                  id="switch"
+                  onclick="toggleMode()"
+                />
+                <div
+                  class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+                ></div>
+              </label>
+
+              <label></label>
             </div>
+          </div>
         </div>
-        <ul>
-            <li><a id="linkedin" href="https://www.linkedin.com/in/williamparaujo/" target="_blank">Veja meu LinkedIn</a></li>
-            <li><a id="projectCode" href="https://github.com/WilliamP-Araujo/DevLinks" target="_blank">Código deste projeto</a></li>
-            <li><a id="community" href="https://www.linkedin.com/company/prototipando-a-quebrada/mycompany/" target="_blank">Conheça minha comunidade</a></li>
-            <li><a id="pythonProjects" href="https://github.com/WilliamP-Araujo/Python-Projects" target="_blank">Veja meus projetos em Python!</a></li>
-        </ul>
-        <div id="social-links">
-            <a href="https://github.com/WilliamP-Araujo" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://www.instagram.com/uwill.png/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://www.youtube.com/channel/UC6xWdJjsOvw-WV12_2BkTXQ" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-            <a href="https://www.linkedin.com/in/williamparaujo" target="_blank"><ion-icon name="logo-linkedIn"></ion-icon></a>
-        </div>
+      </div>
+
+      <ul class="botoes">
+        <li>
+          <a
+            id="linkedin"
+            href="https://www.linkedin.com/in/williamparaujo/"
+            target="_blank"
+            >Veja meu LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            id="projectCode"
+            href="https://github.com/WilliamP-Araujo/DevLinks"
+            target="_blank"
+            >Código deste projeto</a
+          >
+        </li>
+        <li>
+          <a
+            id="community"
+            href="https://www.linkedin.com/company/prototipando-a-quebrada/mycompany/"
+            target="_blank"
+            >Conheça minha comunidade</a
+          >
+        </li>
+        <li>
+          <a id="contato" href="contato.html">Entre em contato!</a>
+        </li>
+      </ul>
     </nav>
     <footer id="footer">Made with ♥ by William P.</footer>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+  </body>
 </html>
